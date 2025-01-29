@@ -1,0 +1,16 @@
+// Proto/test.proto
+syntax = "proto3";
+
+package Proto;
+
+// Correct format for go_package option
+option go_package = "./gen_proto"; // Relative path to the generated package
+
+message UserInfo {
+    string Id = 1;
+    string F_Name = 2;
+    string L_Name = 3;
+    string Email = 4;
+    string Password = 5;
+    
+}
